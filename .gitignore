@@ -1,6 +1,7 @@
 # Built application files
 *.apk
 *.ap_
+.idea/
 
 # Files for the ART/Dalvik VM
 *.dex
@@ -42,6 +43,7 @@ captures/
 
 # Keystore files
 *.jks
+.idea
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
@@ -53,3 +55,23 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+
+.idea/runConfigurations.xml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+.idea/modules.xml
