@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
 
     val uniqueID = UUID.randomUUID()
 
+    fun setVoteValue( yesOrNo : Boolean){
+        myVoteRef?.setValue(UserVote(uniqueID.toString(), yesOrNo))
+        findViewById<TextView>(R.id.you_voted).setText("You Voted ${yesOrNo}")
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,10 +31,10 @@ class MainActivity : AppCompatActivity() {
         myVoteRef = dbRefVotes?.push()
 
         findViewById<Button>(R.id.yes_button).setOnClickListener {
-            myVoteRef?.setValue(UserVote(uniqueID.toString(), true))
+            setVoteValue(true)
         }
         findViewById<Button>(R.id.no_button).setOnClickListener {
-            myVoteRef?.setValue(UserVote(uniqueID.toString(), false))
+            setVoteValue(false)
         }
 
         dbRefSessions?.addValueEventListener(object : ValueEventListener {
