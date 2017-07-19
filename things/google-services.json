@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "198290623156",
+    "firebase_url": "https://fir-votingbooth.firebaseio.com",
+    "project_id": "fir-votingbooth",
+    "storage_bucket": "fir-votingbooth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198290623156:android:cf3ab663f69565f5",
+        "android_client_info": {
+          "package_name": "handstandsam.com.firebaseiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198290623156-3l9u8h60rq8ut82i73uqdnj5jt7h4kvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CTnZYpFxX9vUKNaynlJ8ybyTcYAuOqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
