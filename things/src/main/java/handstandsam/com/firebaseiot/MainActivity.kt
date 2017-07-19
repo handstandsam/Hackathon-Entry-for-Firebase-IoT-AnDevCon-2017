@@ -192,7 +192,7 @@ class MainActivity : Activity() {
                 //Loop over
                 Log.w("TEST",  "Yes $yesCount & No $noCount")
 
-                if(yesCount != 0 && noCount!= 0) {
+                if(yesCount != 0 || noCount!= 0) {
                     updateVoteRainbow(yesCount, noCount)
                 }
             }
