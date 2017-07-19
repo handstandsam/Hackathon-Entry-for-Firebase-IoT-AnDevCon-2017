@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hackathon-Entry-for-Firebase-IoT-AnDevCon-2017.iml" filepath="$PROJECT_DIR$/Hackathon-Entry-for-Firebase-IoT-AnDevCon-2017.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
+      <module fileurl="file://C:\Users\apreston\MyProjects\Hackathon\Hackathon-Entry-for-Firebase-IoT-AnDevCon-2017\mobile\mobile.iml" filepath="C:\Users\apreston\MyProjects\Hackathon\Hackathon-Entry-for-Firebase-IoT-AnDevCon-2017\mobile\mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/things/things.iml" filepath="$PROJECT_DIR$/things/things.iml" />
+      <module fileurl="file://C:\Users\apreston\MyProjects\Hackathon\Hackathon-Entry-for-Firebase-IoT-AnDevCon-2017\things\things.iml" filepath="C:\Users\apreston\MyProjects\Hackathon\Hackathon-Entry-for-Firebase-IoT-AnDevCon-2017\things\things.iml" />
     </modules>
   </component>
 </project>

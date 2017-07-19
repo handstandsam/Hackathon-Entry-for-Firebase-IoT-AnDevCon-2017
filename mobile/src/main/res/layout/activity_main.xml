@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="handstandsam.com.firebaseiot.MainActivity">
+    tools:context="handstandsam.com.firebaseiot.MainActivityJava">
 
     <TextView
         android:id="@+id/voting_session_title"
