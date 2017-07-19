@@ -2,6 +2,7 @@ package handstandsam.com.firebaseiot
 
 import android.app.Activity
 import android.os.Bundle
+import com.google.firebase.database.DatabaseReference
 
 /**
  * Skeleton of an Android Things activity.
@@ -24,6 +25,8 @@ import android.os.Bundle
  *
  */
 class MainActivity : Activity() {
+
+    var newRef: DatabaseReference? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
