@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     val uniqueID = UUID.randomUUID()
 
-    fun setVoteValue( yesOrNo : Boolean){
+    fun setVoteValue(yesOrNo: Boolean?) {
         myVoteRef?.setValue(UserVote(uniqueID.toString(), yesOrNo))
         findViewById<TextView>(R.id.you_voted).setText("You Voted ${yesOrNo}")
     }
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val value: Long? = dataSnapshot.getValue(Long::class.java)
                 findViewById<TextView>(R.id.voting_session_title).text = value.toString()
+                setVoteValue(null)
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -49,6 +50,12 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+
+        findViewById<Button>(R.id.next_round).setOnClickListener {
+            //Faking server code
+            dbRefVotes?.removeValue()
+            dbRefSessions?.setValue(System.currentTimeMillis())
+        }
 
 
         dbRefVotes?.addValueEventListener(object : ValueEventListener {
