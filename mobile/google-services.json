@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "198290623156-0601k1lgmit95ilkmapviev018i695sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "handstandsam.com.firebaseiot",
+            "certificate_hash": "6d59dcc4b37e02048ad3e302a40e069a65b2b342"
+          }
+        },
+        {
           "client_id": "198290623156-3l9u8h60rq8ut82i73uqdnj5jt7h4kvm.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198290623156-3l9u8h60rq8ut82i73uqdnj5jt7h4kvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
