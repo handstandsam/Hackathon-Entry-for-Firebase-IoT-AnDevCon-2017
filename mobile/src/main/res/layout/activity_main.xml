@@ -8,12 +8,33 @@
     tools:context="handstandsam.com.firebaseiot.MainActivity">
 
     <TextView
+        android:id="@+id/voting_session_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
-    <Button
-        android:id="@+id/toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:text="toggle"/>
 
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES!!"/>
+
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO!!"/>
+
+    <TextView
+        android:id="@+id/you_voted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..." />
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score" />
 </LinearLayout>

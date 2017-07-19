@@ -26,10 +26,43 @@ import com.google.firebase.database.DatabaseReference
  */
 class MainActivity : Activity() {
 
-    var newRef: DatabaseReference? = null
+    var dbRefSessions: DatabaseReference? = null
+    var dbRefVotes: DatabaseReference? = null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+//        dbRefSessions = FirebaseDatabase.getInstance().getReference("VotingSessions")
+//        dbRefVotes = FirebaseDatabase.getInstance().getReference("Votes")
+//
+//        createNewVotingSession()
+
+//        dbRefVotes?.addValueEventListener(object : ValueEventListener {
+//            @SuppressLint("WrongViewCast")
+//            override fun onDataChange(dataSnapshot: DataSnapshot) {
+////                val value = dataSnapshot.getValue(List::class.java) as List<UserVote>
+//
+////                findViewById<TextView>(R.id.voting_session_title).text = value
+//            }
+//
+//            override fun onCancelled(error: DatabaseError) {
+//                // Failed to read value
+//            }
+//        })
+    }
+
+    @Synchronized
+    private fun updateResult() {
+//        dbRefVotes?.database
+
+
+    }
+
+    private fun createNewVotingSession() {
+        dbRefVotes?.removeValue()
+        dbRefSessions?.setValue(System.currentTimeMillis())
     }
 }
